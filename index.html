@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISN 7기 졸업</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #898C72;
+            opacity: 1; /* 초기 불투명도 설정 */
+            transition: opacity 0.5s ease; /* 불투명도 전환 효과 추가 */
+        }
+        header {
+            background-color: #898C72;
+            height: 10vh; /* 화면의 10% 높이 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            background-color: black; /* 제목 배경색 추가 */
+            padding: 10px; /* 제목 내부 여백 추가 */
+            display: inline-block; /* 글씨 뒤에만 배경색이 적용되도록 설정 */
+        }
+        main {
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center; /* 가로로 가운데 정렬 */
+            gap: 10px; /* 이미지 간의 간격 */
+            margin-top: 20px; /* 상단 여백 */
+        }
+        .image-wrapper {
+            text-align: center; /* 이미지와 텍스트를 가운데 정렬 */
+        }
+        .image-label {
+            display: block; /* 번호를 새로운 줄에 표시 */
+            font-size: 12px; /* 글씨 크기 조정 */
+            color: white; /* 글씨 색상 */
+            margin-top: 5px; /* 이미지와 번호 사이의 간격 */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,31 +56,31 @@
             <div class="image-wrapper">
                 <a href="f1.html">
                     <img src="assets/chill_1.png" alt="Chill 1">
-                    <span class="image-label" style="text-decoration: none !important;">후우카</span>
+                    <span class="image-label">후우카</span>
                 </a>
             </div>
             <div class="image-wrapper">
                 <a href="w1.html">
                     <img class="wide" src="assets/chill_2.png" alt="Chill 2">
-                    <span class="image-label" style="text-decoration: none !important;">원동연</span>
+                    <span class="image-label">원동연</span>
                 </a>
             </div>
             <div class="image-wrapper">
                 <a href="m1.html">
                     <img src="assets/chill_3.png" alt="Chill 3">
-                    <span class="image-label" style="text-decoration: none !important;">문인희</span>
+                    <span class="image-label">문인희</span>
                 </a>
             </div>
             <div class="image-wrapper">
                 <a href="l1.html">
                     <img class="wide" src="assets/chill_4.png" alt="Chill 4">
-                    <span class="image-label" style="text-decoration: none !important;">이민규</span>
+                    <span class="image-label">이민규</span>
                 </a>
             </div>
             <div class="image-wrapper">
                 <a href="a1.html">
                     <img src="assets/chill_5.png" alt="Chill 5">
-                    <span class="image-label" style="text-decoration: none !important;">안유림</span>
+                    <span class="image-label">안유림</span>
                 </a>
             </div>
         </div>
@@ -69,6 +110,5 @@
             });
         });
     </script>
-        
 </body>
 </html>
