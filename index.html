@@ -44,6 +44,31 @@
             </div>
         </div>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 페이지 로드 시 불투명도 설정
+            document.body.style.opacity = 1;
     
+            // 링크 클릭 이벤트
+            const links = document.querySelectorAll('a');
+    
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // 기본 링크 클릭 동작 방지
+                    const href = this.getAttribute('href');
+    
+                    // 불투명도 감소
+                    document.body.style.opacity = 0;
+    
+                    // 불투명도가 0이 된 후 페이지 이동
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 500); // CSS에서 설정한 transition 시간과 동일하게 설정
+                });
+            });
+        });
+    </script>
+        
 </body>
 </html>
