@@ -29,13 +29,13 @@ main {
 }
 
 .image-container img {
-    max-width: 75px; /* 이미지 크기 조정 (필요에 따라 조정 가능) */
+    max-width: 60px; /* 이미지 크기 조정 (필요에 따라 조정 가능) */
     height: auto; /* 비율 유지 */
-    flex: 1 1 75px; /* 반응형 크기 조정 */
+    flex: 1 1 60px; /* 반응형 크기 조정 */
 }
 
 .image-container img.wide {
-    max-width: 140px; /* 넓은 이미지 크기 조정 (필요에 따라 조정) */
+    max-width: 80px; /* 넓은 이미지 크기 조정 (필요에 따라 조정) */
 }
 
 .content-container {
