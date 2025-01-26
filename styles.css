@@ -20,3 +20,15 @@ h1 {
 main {
     padding: 20px;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* 가로로 가운데 정렬 */
+    gap: 10px; /* 이미지 간의 간격 */
+    margin-top: 20px; /* 상단 여백 */
+}
+
+.image-container img {
+    max-width: 100px; /* 이미지 크기 조정 (필요에 따라 조정 가능) */
+    height: auto; /* 비율 유지 */
+}
