@@ -36,3 +36,38 @@ main {
 .image-container img.wide {
     max-width: 140px; /* 넓은 이미지 크기 조정 (필요에 따라 조정) */
 }
+
+.content-container {
+    display: flex; /* 이미지와 내용을 나란히 배치 */
+    padding: 20px;
+}
+
+.top-image {
+    max-width: 100px; /* 이미지 크기 조정 */
+    margin-right: 20px; /* 이미지와 내용 사이의 간격 */
+}
+
+.content-box {
+    background-color: white; /* 흰색 배경 */
+    border: 2px solid black; /* 검은 테두리 */
+    border-radius: 10px; /* 둥근 모서리 */
+    padding: 20px;
+    flex: 1; /* 남은 공간을 차지 */
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* 버튼을 양쪽으로 배치 */
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd; /* 호버 시 색상 변경 */
+}
