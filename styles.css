@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'SSRONETHandwritten'; /* 글씨체 이름 정의 */
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SSRONETHandwritten.woff2') format('woff2');
+    font-family: 'Dovemayo_gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    font-family: 'SSRONETHandwritten', sans-serif;
+    font-family: 'Dovemayo_gothic', sans-serif;
     background-color: #898C72;
     opacity: 1; /* 초기 불투명도 설정 */
     transition: opacity 0.5s ease; /* 불투명도 전환 효과 추가 */
