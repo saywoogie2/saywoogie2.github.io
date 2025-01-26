@@ -34,5 +34,5 @@ main {
 }
 
 .image-container img.wide {
-    max-width: 120px; /* 넓은 이미지 크기 조정 (필요에 따라 조정) */
+    max-width: 140px; /* 넓은 이미지 크기 조정 (필요에 따라 조정) */
 }
