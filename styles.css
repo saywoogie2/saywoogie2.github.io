@@ -15,6 +15,10 @@ header {
 
 h1 {
     margin: 0;
+    background-color: black; /* 제목 배경색 추가 */
+    padding: 10px; /* 제목 내부 여백 추가 */
+    display: inline-block; /* 글씨 뒤에만 배경색이 적용되도록 설정 */
+
 }
 
 main {
