@@ -29,10 +29,9 @@ main {
 }
 
 .image-container img {
-    max-width: 100px; /* 이미지 크기 조정 (필요에 따라 조정 가능) */
+    max-width: 75px; /* 이미지 크기 조정 (필요에 따라 조정 가능) */
     height: auto; /* 비율 유지 */
-    flex: 1 1 100px; /* 반응형 크기 조정 */
-    max-width: 150px; /* 최대 너비 설정 */
+    flex: 1 1 75px; /* 반응형 크기 조정 */
 }
 
 .image-container img.wide {
