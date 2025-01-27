@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>페이지 1</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Dovemayo_gothic', sans-serif;
+            background-color: #898C72;
+            opacity: 1; /* 초기 불투명도 설정 */
+            transition: opacity 0.5s ease; /* 불투명도 전환 효과 추가 */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,7 +23,7 @@
         <img class="top-image" src="assets/chill_1.png" alt="Chill 1">
         <main>
             <div class="content-box">
-                <p>내용</p>
+                <p>여기에 내용을 추가하세요. ... (내용 생략) ...</p>
             </div>
         </main>
     </div>
@@ -22,5 +31,29 @@
         <button onclick="window.location.href='f2.html'">이전</button>
         <button onclick="window.location.href='f4.html'">다음</button>
     </footer>
+
+    <script>
+        // 페이지 로드 시 불투명도 설정
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = 1;
+
+            // 버튼 클릭 이벤트
+            const buttons = document.querySelectorAll('footer button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    const href = this.getAttribute('onclick').match(/'([^']+)'/)[1]; // href 추출
+
+                    // 불투명도 감소
+                    document.body.style.opacity = 0;
+
+                    // 불투명도가 0이 된 후 페이지 이동
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 500); // CSS에서 설정한 transition 시간과 동일하게 설정
+                });
+            });
+        });
+    </script>
 </body>
 </html>
